@@ -55,7 +55,6 @@ cards. Since there are different types of stations: "subway station" and "bus st
 calculation is different, so we use FareStrategy interface to calculate fare for different type of
 stations.
 
-
 5. Dependency inversion principle
 When we implementing TransitPass superclass, we avoid implementing top up function and all cards
 under this class are only able to record information and deduct, while all other methods are for
