@@ -188,11 +188,11 @@ public class CardManager extends Observable implements Serializable {
     if (targetCard != null) {
       if (cards.get(cardId).isSuspended()) {
         Logging.getLogger().log(Level.INFO,
-                "Card " + cardId + " has been top up successfully.");
+                "Card " + cardId + " is unable to top up.");
       } else {
         targetCard.topUp(fare.doubleValue());
         Logging.getLogger().log(Level.INFO,
-                "Card " + cardId + " is unable to top up.");
+                "Card " + cardId + " has been top up successfully.");
       }
       serializeCards();
     } else {

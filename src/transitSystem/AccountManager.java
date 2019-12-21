@@ -212,15 +212,15 @@ public class AccountManager extends Observable {
           totalTimes += costPerDay.get(time)[0];
         }
       }
-      System.out.println(
-          "In "
-              + date
-              + ", "
-              + "the "
-              + "average cost of account "
-              + email
-              + "is "
-              + costPerMonth / totalTimes);
+//      System.out.println(
+//          "In "
+//              + date
+//              + ", "
+//              + "the "
+//              + "average cost of account "
+//              + email
+//              + " is "
+//              + costPerMonth / totalTimes);
     } else {
       Logging.getLogger().log(Level.WARNING, "There is no account " + email + " been found.");
     }
@@ -258,7 +258,6 @@ public class AccountManager extends Observable {
   void updateAccountCostInformation(String ownerEmail, String time, double fare) {
     if (ownerEmail != null) {
       CardHolderAccount account = this.findAccount(ownerEmail);
-      System.out.println(account.getName());
       HashMap<String, Double[]> accountCostPerDay = account.getCostPerDay();
       if (accountCostPerDay.containsKey(time)) {
         Double[] costTimes = accountCostPerDay.get(time);

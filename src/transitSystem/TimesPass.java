@@ -43,7 +43,6 @@ public class TimesPass extends TransitPass implements AbleTopUp, Serializable {
     // deduct one time from the card
     int DEDUCT_VALUE = 1;
     this.setTimes(this.getTimes() - DEDUCT_VALUE);
-    System.out.println("Remaining times is " + getTimes());
     // update the card cost information on the specific date.
     updateCardCostInformation(time, fare);
     // update account cost information in the specific date
@@ -166,7 +165,7 @@ public class TimesPass extends TransitPass implements AbleTopUp, Serializable {
     } else if (fare.equals(10.0)) {
       this.setTimes(this.getTimes() + FIVE_TIMES);
     }
-    System.out.println("successfully topped up");
+    //System.out.println("successfully topped up");
   }
 
   /**
