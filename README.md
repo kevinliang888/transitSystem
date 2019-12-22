@@ -12,7 +12,7 @@ This is a simple guide to show you how to import them to IntelliJ IDEA
 4. Check two external libraries, then click OK.
 
 ## Instruction
-1. You can simply run the Main function from source code on IDEs, or download the packed app [here]([https://github.com/kevinliang888/transitSystem/releases]). Note that configuration.txt has to be in the same directory.
+1. You can simply run the Main function from source code on IDEs, or download the packed app [here](https://github.com/kevinliang888/transitSystem/releases). Note that configuration.txt has to be in the same directory.
 2. The system is initialized to be closed. Therefore administrator has to login his/her account to open the system. The account email and password are initialized to be "admin".
 3.  Then you can apply for a new card directly. There are three different kind of transit pass to choose:  Traffic Card, 10 times Pass, Weekly Pass. After applying for a new card, you can use the card to tap in and tap out the station. You can also check the balance and top up the card. 
 4.  You can create a new account to manage all of your cards and track your card activity. 
