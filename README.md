@@ -1,4 +1,4 @@
-﻿# transitSystem
+﻿# Transit System
 A simulation of real life transit system.
 
 ## Getting Started
