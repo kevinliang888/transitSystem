@@ -89,7 +89,6 @@ public class TrafficCard extends TransitPass implements AbleTopUp, Serializable 
   @Override
   String tap(double fare, String time, AccountManager accountManager) {
     setBalance(getBalance() - fare);
-    System.out.println("$" + fare + " has been deducted from the balance of card " + cardId);
     // update the card cost information on the specific date.
     updateCardCostInformation(time, fare);
     // update account cost information in the specific date
